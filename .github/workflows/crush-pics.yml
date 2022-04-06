@@ -1,8 +1,6 @@
 name: Crush images
 on:
   pull_request:
-    branches:
-      - production
     paths:
       - '**.jpg'
       - '**.jpeg'
