@@ -1,0 +1,423 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+:root {
+  /*   color variables */
+  --clr-primary: #6aeeb5;
+  --clr-primary-hover: #29e6a7;
+  --clr-primary-dark: #039d69;
+  --clr-gray100: #f0f7f8;
+  --clr-gray200: #cfd8dc;
+
+  /*   border radius */
+  --radius: 0.2rem;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  font-family: Roboto, sans-serif;
+}
+
+
+.nav-list {
+  background: white;
+  padding: 1rem 0;
+  border-radius: var(--radius);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.nav-item {
+  list-style: none;
+  margin-left: 2rem;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: #8B8B8B;
+  transition: all 200ms ease-in;
+}
+
+.nav-item a:hover {
+  color: #7134F3;
+}
+
+.current {
+  color: black;
+  list-style: none;
+}
+
+.current a {
+  text-decoration: none;
+  color: #000;
+}
+
+
+.btn-primary {
+  font-family: Roboto, sans-serif;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #3D3D3D;
+  background: #fff;
+  border: 1px solid #707070;
+  outline: none;
+  border-radius: 0.7rem;
+  padding: 0.5rem 1.5rem;
+  cursor: pointer;
+  transition: all 200ms ease-in;
+
+}
+
+/* .btn-primary:hover{
+  opacity: 0.3;
+} */
+
+
+/* .btn-primary:hover {
+  background: var(--clr-primary-hover);
+} */
+
+.cta {
+  margin-left: 30%;
+  margin-right: 10%;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #3D3D3D;
+  border: 1px solid #707070;
+  outline: none;
+  border-radius: 0.7rem;
+  padding: 0.5rem 1.5rem;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 200ms ease-in;
+}
+
+.cta:hover {
+  border: 1px solid #7134F3;
+  color: #7134F3;
+}
+
+
+section.hero {
+  height: 100vh;
+  margin-left: 64px;
+  width: 55%;
+  overflow: hidden;
+}
+
+
+.hero-section-main-img {
+  position: absolute;
+  background-image: url(img/hero-image.png);
+  height: 100vh;
+  width: 45%;
+  left: 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+.hero-section-secondary-img {
+  position: absolute;
+  background-image: url(img/learninglab.png);
+  height: 480px;
+  width: 450px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 10000;
+  top: 21.8%;
+  left: 64.5%
+}
+
+.hero-section-triangles {
+  position: absolute;
+  left: -0.5%;
+  top: 20%;
+  background-image: url(img/triangles.jpg);
+  height: 40px;
+  width: 150px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.hero-section-text-wrapper {
+  position: absolute;
+  top: 40%;
+}
+
+.hero-title {
+  margin: 0;
+  letter-spacing: 1px;
+  font-size: 3.45rem;
+  font-weight: 500;
+}
+
+.hero-subtext {
+  margin-top: 15px;
+  font-weight: 300;
+  font-size: 1.5rem;
+  margin-bottom: 40px;
+}
+
+.btn-learn {
+  font-family: Roboto, sans-serif;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #fff;
+  background: #07609D;
+  border: none;
+  outline: none;
+  border-radius: 0.5rem;
+  padding: 1rem 3rem;
+  cursor: pointer;
+  transition: all 200ms ease-in;
+  margin-right: 20px;
+  text-decoration: none;
+}
+
+.btn-learn:hover {
+  padding: 1.1rem 3.1rem;
+}
+
+.btn-join {
+  font-family: Roboto, sans-serif;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #3D3D3D;
+  background: transparent;
+  border: 1px solid #07609D;
+  outline: none;
+  border-radius: 0.5rem;
+  padding: 0.8rem 1.8rem;
+  padding: 1rem 3rem;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 200ms ease-in;
+}
+
+.btn-join:hover {
+  border: 2px solid #07609D;
+}
+
+/* END OF HERO SECTION CSS */
+
+.sub-header {
+  text-align: center;
+  font-size: 40px;
+}
+
+.about-info-background {
+  background-color: #07609D;
+  height: 100vh;
+  margin: auto;
+  position: relative;
+}
+
+.about-info {
+  position: absolute;
+  color: white;
+  width: 70%;
+  padding-left: 5%;
+  padding-right: 5%;
+  margin: auto;
+  top: 15%;
+  right: 15%;
+  left: 15%;
+}
+
+
+.feature {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+  margin-top: 5%;
+}
+
+.su-feature {
+  text-align: center;
+}
+
+.content {
+  margin: auto;
+}
+
+.border-left {
+  padding-left: 30px;
+  border-left: 1px solid #fff;
+}
+
+.border-right {
+  border-right: 1px solid #fff;
+  padding-right: 30px;
+}
+
+/* END OF ABOUT US CSS */
+
+
+
+section.recent-events {
+  display: inline-block;
+  height: 100vh;
+  margin-bottom: 80%;
+  margin-top: 10%;
+}
+
+section.recent-events p {
+  text-align: center;
+  margin-bottom: 49px;
+}
+
+
+.row {
+  display: -ms-flexbox;
+  /* IE 10 */
+  display: flex;
+  -ms-flex-wrap: wrap;
+  /* IE 10 */
+  flex-wrap: wrap;
+  margin: auto;
+  padding: 0 4px;
+  width: 75%;
+}
+
+.column {
+  -ms-flex: 50%;
+  /* IE 10 */
+  flex: 50%;
+  padding: 0 4px;
+  object-fit: contain;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+
+
+/* END OF EVENTS SECTION CSS */
+
+section.newsletter {
+  padding: 40px;
+  border-radius: 25px;
+  height: 40vh;
+  width: 60%;
+  margin: auto;
+  color: #fff;
+  background-color: #07609D;
+}
+
+section.newsletter p {
+  text-align: center;
+}
+
+.form-inline {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+input[type=text] {
+  width: 60%;
+  padding: 12px 20px;
+  margin: 8px 0;
+}
+
+.form-inline button {
+  margin-left: 20px;
+  padding: 14px 20px;
+  font-weight: 700;
+  background-color: #3995D2;
+  border: 1px transparent;
+  color: white;
+  cursor: pointer;
+}
+
+.form-inline button:hover {
+  border: 1px solid white;
+}
+
+/* END OF NEWSLETTER SECTION CSS */
+
+section.team {
+  height: 220vh;
+  width: 80%;
+  margin: 15% auto 30% auto;
+}
+
+.team-container {
+  margin: auto auto;
+  display: grid;
+  grid-template-columns: repeat(3, 350px);
+  gap: 40px;
+  padding: 1em;
+}
+
+.team-content img {
+  width: 350px;
+  height: auto;
+}
+
+/* END OF TEAM SECTION CSS */
+
+footer {
+  margin: auto;
+  width: 90%;
+}
+
+.links-container {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.team-name {
+  margin-bottom: 0;
+  font-size: 25px;
+}
+
+.team-title {
+  margin-top: 8px;
+}
+
+footer a {
+  text-decoration: none;
+  color: #3995D2;
+}
+
+
+.animation {
+  margin: auto;
+  width: 90%;
+  border-top: 1px solid #07609D;
+  animation: draw-line 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes draw-line {
+  0% {
+    width: 0;
+  }
+
+  50% {
+    border-top: 1px solid #07609D;
+  }
+
+  100% {
+    width: 100%;
+    border-top: 1px solid #07609D;
+  }
+
+}
