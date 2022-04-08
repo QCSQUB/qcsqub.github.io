@@ -65,6 +65,13 @@ body {
   .hero-subtext {
     font-size: large !important;
     font-weight: normal !important;
+    width: 80%;
+  }
+
+  .hero-subtext-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .about-info-background {
@@ -89,12 +96,12 @@ body {
     margin-top: 2rem !important;
   }
 
-  .border-left{
-    padding-left: 15px  !important;
+  .border-left {
+    padding-left: 15px !important;
     margin-left: -10px !important;
   }
-  .border-right{
-    padding-right: 15px  !important;
+  .border-right {
+    padding-right: 15px !important;
     margin-right: -10px !important;
   }
 }
