@@ -1,166 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Queen&apos;s Computing Society</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>Queen&apos;s Computing Society</title>
-</head>
+  <body>
+    <header>
+      <nav>
+        <ul class="nav-list">
+          <li class="current nav-item">
+            <a href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="https://discord.gg/Esdb9Gj" target="_blank">Discord</a>
+          </li>
+          <a href="mailto:qcs@qub.ac.uk" target="_blank" class="cta">Contact</a>
+        </ul>
+      </nav>
+    </header>
+    <section class="hero">
+      <div class="hero-section-main-img"></div>
+      <div class="hero-section-triangles"></div>
+      <div class="hero-section-secondary-img"></div>
+      <div class="hero-section-text-wrapper">
+        <img src="img/qcs.png" alt="qcs logo" />
+        <h1 class="hero-title">Queen&apos;s Computing Society</h1>
+        <p class="hero-subtext">
+          The society for Computing Students at Queen’s University, Belfast
+        </p>
+        <div id="hero-links">
+          <a href="#about" class="btn-learn">Learn More</a>
+          <a
+            href="https://fixr.co/event/28977274"
+            target="_blank"
+            class="btn-join"
+            >Join Now</a
+          >
+        </div>
+      </div>
+    </section>
+    <section class="about-info-background" id="about">
+      <div class="about-info">
+        <h1 class="sub-header">About the Society</h1>
+        <p>
+          QCS, or the Queen&apos;s Computing Society, is an academic society
+          which hosts a range of social and academic events aimed primarily at
+          students within EEECS, particularly those within the Computing
+          discipline, but open to all. Our social events include pub crawls,
+          laser quest, regular games nights and, definitively our largest social
+          event of the year, the annual EEECS Formal.
+        </p>
+        <p>
+          Any excuse to eat pizza, have a drink (or two) and have a good time!
+          Our academic events include hackathons, industry talks, networking
+          opportunities, cross-school/society events and more! Anything that
+          gives Students the chance to learn, develop, network and have a great
+          time (and eat more pizza.)
+        </p>
+        <p>
+          This is only a few of the events we frequently host both academically
+          and socially each year. We’re always coming up with and are open to
+          new ideas and suggestions!
+        </p>
 
-<body>
-  <header>
-    <nav>
-      <ul class="nav-list">
-        <li class="current nav-item">
-          <a href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a href="#about">About</a>
-        </li>
-        <li class="nav-item">
-          <a href="https://discord.gg/Esdb9Gj" target="_blank">Discord</a>
-        </li>
-        <a href="mailto:qcs@qub.ac.uk" target="_blank" class="cta">Contact</a>
-      </ul>
-    </nav>
-  </header>
-  <section class="hero">
-    <div class="hero-section-main-img"></div>
-    <div class="hero-section-triangles"></div>
-    <div class="hero-section-secondary-img"></div>
-    <div class="hero-section-text-wrapper">
-      <h1 class="hero-title">Queen&apos;s Computing Society</h1>
-      <p class="hero-subtext">Society for Computing Students at Queen’s University, Belfast</p>
-      <a href="#about" class="btn-learn">Learn More</a>
-      <a href="https://fixr.co/event/28977274" target="_blank" class="btn-join">Join Now</a>
-  </section>
-  <section class="about-info-background" id="about">
-    <div class="about-info">
-      <h1 class="sub-header">About the Society</h1>
-      <p>QCS, or the Queen&apos;s Computing Society, is an academic society which hosts a range of social and academic events
-        aimed primarily at students within EEECS, particularly those within the Computing discipline, but open to all.
-        Our social events include pub crawls, laser quest, regular games nights and, definitively our largest social
-        event of the year, the annual EEECS Formal. </p>
-      <p>Any excuse to eat pizza, have a drink (or two) and have a good time! Our academic events include hackathons,
-        industry talks, networking opportunities, cross-school/society events and more! Anything that gives Students the
-        chance to learn, develop, network and have a great time (and eat more pizza.)</p>
-      <p> This is only a few of the events we frequently host both academically and socially each year. We’re always
-        coming up with and are open to new ideas and suggestions!</p>
+        <div class="feature">
+          <div class="content border-right">
+            <p class="content-subtext su-feature">
+              QUBSU&apos;s Best Academic Society 2019
+            </p>
+          </div>
+          <div class="content">
+            <p class="content-subtext">360+ Current Members</p>
+          </div>
+          <div class="content border-left">
+            <p class="content-subtext">1000+ Discord Members</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="recent-events">
+      <h1 class="sub-header">Recent Events</h1>
+      <p>
+        A selection of photos from our most recent events, workshops and talks.
       </p>
-      <div class="feature">
-        <div class="content border-right">
-          <p class="content-subtext su-feature">QUBSU&apos;s Best Academic Society 2019</p>
+      <!-- Photo Grid -->
+      <div class="row">
+        <div class="column">
+          <img src="img/teamformal22.png" />
+          <img src="img/boardgames.png" />
+          <img src="img/presAddress.jpeg" />
         </div>
-        <div class="content ">
-          <p class="content-subtext">360+ Current Members</p>
+        <div class="column">
+          <img class="img-scale" src="img/sistem22.png" />
+          <img src="/img/talk.png" />
+          <img src="/img/formal22.png" />
         </div>
-        <div class="content border-left">
-          <p class="content-subtext">1000+ Discord Members </p>
+      </div>
+    </section>
+    <section class="newsletter">
+      <h1 class="sub-header">Stay Up To Date with Our Newsletter</h1>
+      <p>
+        Fill in your email below to be keep up to date with the QCS monthly
+        newsletter!
+      </p>
+      <form class="form-inline">
+        <input
+          type="text"
+          id="email"
+          name="fname"
+          placeholder="Your Email"
+        /><br />
+        <button type="submit">Subscribe</button>
+      </form>
+    </section>
+    <section class="team">
+      <h1 class="sub-header">Our Team</h1>
+      <div class="team-container">
+        <div class="team-content">
+          <img src="img/olivia.png" />
+          <p class="team-name">Olivia</p>
+          <p class="team-title">President</p>
+        </div>
+        <div class="team-content">
+          <img src="img/theo.png" />
+          <p class="team-name">Theo</p>
+          <p class="team-title">Vice President</p>
+        </div>
+        <div class="team-content">
+          <img src="img/joseph.png" />
+          <p class="team-name">Joseph</p>
+          <p class="team-title">Treasurer</p>
+        </div>
+        <div class="team-content">
+          <img src="img/james.png" />
+          <p class="team-name">James</p>
+          <p class="team-title">Secretary</p>
+        </div>
+        <div class="team-content">
+          <img src="img/tim.png" />
+          <p class="team-name">Tim</p>
+          <p class="team-title">Head of Events</p>
+        </div>
+        <div class="team-content">
+          <img src="img/mark.png" />
+          <p class="team-name">Mark</p>
+          <p class="team-title">Social Media Manager</p>
+        </div>
+        <div class="team-content">
+          <img src="img/paul.png" />
+          <p class="team-name">Paul</p>
+          <p class="team-title">Society Graphic Designer & Events Team</p>
+        </div>
+        <div class="team-content">
+          <img src="img/lucy.png" />
+          <p class="team-name">Lucy</p>
+          <p class="team-title">Events Team</p>
+        </div>
+        <div class="team-content">
+          <img src="img/Rectangle 12.png" />
+          <p class="team-name">Matthew Close</p>
+          <p class="team-title">Events Team</p>
+        </div>
+        <div class="team-content">
+          <img src="img/Rectangle 12.png" />
+          <p class="team-name">Rhys Morris</p>
+          <p class="team-title">Events Team</p>
+        </div>
+        <div class="team-content">
+          <img src="img/Rectangle 12.png" />
+          <p class="team-name">Ryan Rogan</p>
+          <p class="team-title">Events Team</p>
+        </div>
+        <div class="team-content">
+          <img src="img/Rectangle 12.png" />
+          <p class="team-name">Gabrielle Whitelegg</p>
+          <p class="team-title">Events Team</p>
         </div>
       </div>
-    </div>
-    </div>
-  </section>
-  <section class="recent-events">
-    <h1 class="sub-header">Recent Events</h1>
-    <p>A selection of photos from our most recent events, workshops and talks.</p>
-    <!-- Photo Grid -->
-    <div class="row">
-      <div class="column">
-        <img src="img/teamformal22.png">
-        <img src="img/boardgames.png">
-        <img src="img/presAddress.jpeg">
+    </section>
+    <footer>
+      <div class="animation"></div>
+      <div class="links-container">
+        <p>© 2022 Queen's Computing Society. All Rights Reserved.</p>
+        <a href="#">Society Guidelines</a>
       </div>
-      <div class="column">
-        <img class="img-scale" src="img/sistem22.png">
-        <img src="/img/talk.png">
-        <img src="/img/formal22.png">
-      </div>
-  </section>
-  <section class="newsletter">
-    <h1 class="sub-header">Stay Up To Date with Our Newsletter</h1>
-    <p>Fill in your email below to be keep up to date with the QCS monthly newsletter!</p>
-    <form class="form-inline">
-      <input type="text" id="email" name="fname" placeholder="Your Email"><br>
-      <button type="submit">Subscribe</button>
-    </form>
-  </section>
-  <section class="team">
-    <h1 class="sub-header">Our Team</h1>
-    <div class="team-container">
-      <div class="team-content">
-        <img src="img/olivia.png">
-        <p class="team-name">Olivia</p>
-        <p class="team-title">President</p>
-      </div>
-      <div class="team-content">
-        <img src="img/theo.png">
-        <p class="team-name">Theo</p>
-        <p class="team-title">Vice President</p>
-      </div>
-      <div class="team-content">
-        <img src="img/joseph.png">
-        <p class="team-name">Joseph</p>
-        <p class="team-title">Treasurer</p>
-      </div>
-      <div class="team-content">
-        <img src="img/james.png">
-        <p class="team-name">James</p>
-        <p class="team-title">Secretary</p>
-      </div>
-      <div class="team-content">
-        <img src="img/tim.png">
-        <p class="team-name">Tim</p>
-        <p class="team-title">Head of Events</p>
-      </div>
-      <div class="team-content">
-        <img src="img/mark.png">
-        <p class="team-name">Mark</p>
-        <p class="team-title">Social Media Manager</p>
-      </div>
-      <div class="team-content">
-        <img src="img/paul.png">
-        <p class="team-name">Paul</p>
-        <p class="team-title">Society Graphic Designer & Events Team</p>
-      </div>
-      <div class="team-content">
-        <img src="img/lucy.png">
-        <p class="team-name">Lucy</p>
-        <p class="team-title">Events Team</p>
-      </div>
-      <div class="team-content">
-        <img src="img/Rectangle 12.png">
-        <p class="team-name">Matthew Close</p>
-        <p class="team-title">Events Team</p>
-      </div>
-      <div class="team-content">
-        <img src="img/Rectangle 12.png">
-        <p class="team-name">Rhys Morris</p>
-        <p class="team-title">Events Team</p>
-      </div>
-      <div class="team-content">
-        <img src="img/Rectangle 12.png">
-        <p class="team-name">Ryan Rogan</p>
-        <p class="team-title">Events Team</p>
-      </div>
-      <div class="team-content">
-        <img src="img/Rectangle 12.png">
-        <p class="team-name">Gabrielle Whitelegg</p>
-        <p class="team-title">Events Team</p>
-      </div>
-    </div>
-    </div>
-    </div>
-  </section>
-  <footer>
-    <div class="animation"></div>
-    <div class="links-container">
-      <p> © 2022 Queen's Computing Society. All Rights Reserved.</p>
-      <a href="#">Society Guidelines</a>
-    </div>
-  </footer>
-</body>
-
+    </footer>
+  </body>
 </html>
