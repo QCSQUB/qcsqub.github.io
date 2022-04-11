@@ -130,24 +130,25 @@ section.hero {
   left: 50%;
   background-size: contain;
   background-repeat: no-repeat;
+  top: 20%;
   z-index: -1;
 }
 
 .hero-section-secondary-img {
   position: absolute;
   background-image: url(img/learninglab.png);
-  height: 480px;
-  width: 450px;
+  height: 45%;
+  width: 30%;
   background-size: contain;
   background-repeat: no-repeat;
   z-index: 10000;
-  top: 21.8%;
+  top: 40%;
   left: 64.5%;
 }
 
 .hero-section-triangles {
   position: absolute;
-  left: -0.5%;
+  left: 0.1em;
   top: 20%;
   background-image: url(img/triangles.jpg);
   height: 40px;
@@ -283,8 +284,8 @@ section.hero {
 
 section.recent-events {
   display: inline-block;
-  height: 100vh;
-  margin-bottom: 80%;
+  /* height: 100vh; */
+  margin-bottom: 20vh;
   margin-top: 10%;
 }
 
@@ -322,9 +323,9 @@ section.recent-events p {
 /* END OF EVENTS SECTION CSS */
 
 section.newsletter {
-  padding: 40px;
+  padding: 2rem;
   border-radius: 25px;
-  height: 40vh;
+  /* height: 40vh; */
   width: 60%;
   margin: auto;
   color: #fff;
@@ -334,6 +335,7 @@ section.newsletter {
 section.newsletter p {
   text-align: center;
 }
+
 
 .form-inline {
   display: flex;
@@ -346,6 +348,7 @@ section.newsletter p {
   padding: 12px 20px;
   margin: 8px 0;
   border-radius: 5px;
+  width: 50%;
   background-color: white;
 }
 
@@ -367,22 +370,24 @@ section.newsletter p {
 /* END OF NEWSLETTER SECTION CSS */
 
 section.team {
-  height: 220vh;
+  /* height: 220vh; */
   width: 80%;
-  margin: 15% auto 30% auto;
+  margin: auto;
+  margin: 20vh auto;
 }
 
 .team-container {
   margin: auto auto;
   display: grid;
-  grid-template-columns: repeat(3, 350px);
-  gap: 40px;
-  padding: 1em;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1em;
+  /* padding: 1em; */
 }
 
 .team-content img {
-  width: 350px;
+  width: 100%;
   height: auto;
+  border-radius: 5px;
 }
 
 /* END OF TEAM SECTION CSS */
@@ -404,7 +409,8 @@ footer {
 
 .team-name {
   margin-bottom: 0;
-  font-size: 25px;
+  font-size: xx-large;
+  font-weight: bold;
 }
 
 .team-title {
@@ -423,6 +429,8 @@ footer a {
   animation: draw-line 3s;
   animation-fill-mode: forwards;
 }
+
+
 
 @keyframes draw-line {
   0% {
@@ -573,5 +581,37 @@ footer a {
   #email {
     width: 100%;
     margin-bottom: 1em;
+  }
+
+  section.team {
+    height: auto;
+    width: 80%;
+    margin: auto;
+    margin-top: 20vh;
+  }
+
+  .team-container {
+    margin: auto auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    padding: 0;
+    padding-bottom: 2rem;
+  }
+
+  .team-content img {
+    width: 100%;
+    height: auto;
+    /* border: 2px #8300C0 solid; */
+    border-radius: 5px;
+  }
+
+  .team-name {
+    margin-bottom: 0;
+    font-size: large;
+  }
+
+  .team-title {
+    margin-top: 0;
   }
 }
