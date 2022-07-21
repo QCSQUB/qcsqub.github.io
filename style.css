@@ -336,7 +336,6 @@ section.newsletter p {
   text-align: center;
 }
 
-
 .form-inline {
   display: flex;
   flex-flow: row wrap;
@@ -430,8 +429,6 @@ footer a {
   animation-fill-mode: forwards;
 }
 
-
-
 @keyframes draw-line {
   0% {
     width: 0;
@@ -460,8 +457,9 @@ footer a {
     text-align: center !important;
     margin-left: 0 !important;
     width: 100% !important;
-    padding-bottom: 20vh !important;
-    height: 80vh !important;
+    padding-top: 5vh !important;
+    padding-bottom: 5vh !important;
+    height: 40vh !important;
     display: flex !important;
     justify-content: center;
     align-items: center;
