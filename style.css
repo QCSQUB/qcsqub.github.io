@@ -43,7 +43,7 @@ nav {
   align-items: center;
 
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   margin: 0 2rem;
   column-gap: 1.5rem;
   max-width: 40%;
@@ -453,7 +453,10 @@ footer a {
   }
 
   .nav-list {
-    max-width: 100% !important;
+    max-width: 90% !important;
+      }
+  .nav-item {
+    font-size: smaller;
   }
 
   .hero {
