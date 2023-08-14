@@ -43,10 +43,14 @@ nav {
   align-items: center;
 
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(6, 1fr);
   margin: 0 2rem;
   column-gap: 1.5rem;
   max-width: 40%;
+}
+
+.qublogo img {
+  height: 2rem;
 }
 
 .nav-item {
