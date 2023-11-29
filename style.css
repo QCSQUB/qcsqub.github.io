@@ -386,10 +386,16 @@ section.team {
 }
 
 .team-container {
-  margin: auto auto;
+  /* margin: auto auto;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 5em;
+  justify-content: center;
+  grid-template-columns: repeat(4, 1fr);*/
+  gap: 5em; 
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+
   /* padding: 1em; */
 }
 
@@ -406,6 +412,7 @@ section.team {
   align-items: center;
   justify-content: center;
   text-align: center;
+  max-width: 15vw;
 }
 
 /* END OF TEAM SECTION CSS */
@@ -636,21 +643,26 @@ footer a {
     margin-top: 20vh;
   }
 
-  .team-container {
+  /* .team-container {
     margin: auto auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
     padding: 0;
     padding-bottom: 2rem;
-  }
+  } */
 
+  .team-content {
+    max-width: 30vw;
+  }
+/* 
   .team-content img {
     width: 100%;
     height: auto;
-    /* border: 2px #8300C0 solid; */
+ 
+
     border-radius: 5px;
-  }
+  } */
 
   .team-name {
     margin-bottom: 0;
